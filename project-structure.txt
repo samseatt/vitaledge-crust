@@ -1,0 +1,77 @@
+
+vitaledge-crust/
+├── src/
+│   ├── config/               # Configuration files
+│   │   ├── database.ts       # Database connection and configuration
+│   │   ├── redis.ts          # Redis connection setup
+│   │   ├── env.ts            # Environment variables parser
+│   │   └── logger.ts         # Centralized logging setup
+│   │
+│   ├── middleware/           # Middleware for cross-cutting concerns
+│   │   ├── auth.ts           # Authentication middleware (JWT, etc.)
+│   │   ├── logging.ts        # Middleware for logging requests/responses
+│   │   ├── errorHandler.ts   # Global error handling middleware
+│   │   └── security.ts       # Security-related middleware (e.g., CORS, rate-limiting)
+│   │
+│   ├── routes/               # Route definitions
+│   │   ├── analyticsRoutes.ts# Routes for Analytics API
+│   │   ├── dashboardRoutes.ts# Routes for Dashboard API
+│   │   ├── houseRoutes.ts    # Routes for House API
+│   │   ├── patientRoutes.ts  # Routes for Patient/Twin API
+│   │   ├── caseRoutes.ts     # Routes for Case API
+│   │   ├── pipesRoutes.ts    # Routes for Pipelines API
+│   │   ├── adminRoutes.ts    # Routes for Admin API
+│   │   └── index.ts          # Main route aggregator
+│   │
+│   ├── controllers/          # Controllers for handling requests
+│   │   ├── analyticsController.ts
+│   │   ├── dashboardController.ts
+│   │   ├── houseController.ts
+│   │   ├── patientController.ts
+│   │   ├── caseController.ts
+│   │   ├── pipesController.ts
+│   │   └── adminController.ts
+│   │
+│   ├── services/             # Services containing business logic
+│   │   ├── analyticsService.ts
+│   │   ├── dashboardService.ts
+│   │   ├── houseService.ts
+│   │   ├── patientService.ts
+│   │   ├── caseService.ts
+│   │   ├── pipesService.ts
+│   │   └── adminService.ts
+│   │
+│   ├── models/               # TypeScript interfaces and models
+│   │   ├── analyticsModel.ts
+│   │   ├── dashboardModel.ts
+│   │   ├── houseModel.ts
+│   │   ├── patientModel.ts
+│   │   ├── caseModel.ts
+│   │   ├── pipesModel.ts
+│   │   └── adminModel.ts
+│   │
+│   ├── utils/                # Utility functions
+│   │   ├── responseFormatter.ts # Format API responses consistently
+│   │   ├── validator.ts      # Request validation helpers
+│   │   ├── eventLogger.ts    # Functions for logging events
+│   │   └── cryptoUtils.ts    # Cryptography utilities
+│   │
+│   ├── index.ts              # Entry point for the application
+│   ├── app.ts                # Express app setup
+│   └── server.ts             # Server start and initialization
+│
+├── tests/                    # Test files
+│   ├── integration/          # Integration tests
+│   ├── unit/                 # Unit tests
+│   └── e2e/                  # End-to-end tests
+│
+├── public/                   # Static assets
+│
+├── dist/                     # Compiled TypeScript files (output folder)
+│
+├── .env                      # Environment variables
+├── .eslintrc.js              # ESLint configuration
+├── .prettierrc               # Prettier configuration
+├── tsconfig.json             # TypeScript configuration
+├── package.json              # Dependencies and scripts
+└── README.md                 # Project documentation
